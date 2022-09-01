@@ -1,0 +1,26 @@
+.figuras {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.figuras figure {
+  margin: 0 10px 0 10px;
+}
+
+.figuras figure figcaption {
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  font-size: small;
+}
+
+header {
+  height: 200px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybDj9948IRg8iZt0n4zuQTJefcAaX9bRjqA&usqp=CAU");
+}
+
+body {
+  margin: 5rem;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvimento Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="imagens.css" />
+    <style>
+      ul {
+        color: darkgreen;
+        list-style-type: circle;
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+      }
+      .nav ul {
+        list-style-type: none;
+        display: flex;
+      }
+      .nav li {
+        margin: 0 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a id="topo"></a>
+      <h1>Desenvolvimento Web</h1>
+      <p>Fundamentos da linguagem HTML</p>
+      <div class="nav">
+        <ul>
+          <li>Texto</li>
+          <li>Listas</li>
+          <li>Imagens</li>
+          <li>Tabela</li>
+        </ul>
+      </div>
+    </header>
+    <a href="#fim">Fim da página</a>
+    <section>
+      <h2>Marcações de texto</h2>
+      Aqui um texto sem marcação. Não aidanta dar Enter
+      <p class="text-center">
+        Este é parágrafo <b>cheio de marcações</b>
+        e tipos de fontes <i>diferentes do comum</i>,
+        com alguns textos mais<u>importantes do que outros.</u>
+        <br />
+        <s>Essa marcação pode ser usada em algo que está ultrapassado.</s>
+        <br />
+        Fórmulas: <br>
+        Equivalência entre matéria e energia: E = mc<sup>2</sup>
+        <br />
+        Água: H<sub>2</sub>O
+      </p>
+    </section>
+    <section>
+      <h2 class="text-uppercase">Listas</h2>
+      <h3>Listas não ordenadas</h3>
+      <ul>
+        <li>Item não ordenado</li>
+        <li>Item não ordenado</li>
+        <ul style="list-style-type: georgian">
+          <li>Subitem</li>
+        </ul>
+        <ul>
+          <li>Subitem</li>
+        </ul>
+        <li>Item não ordenado</li>
+      </ul>
+      <h3>Listas ordenadas</h3>
+      <ol>
+        <li>Item ordenado</li>
+        <li>Item ordenado</li>
+        <ul class="list-group">
+          <li class="list-group-item">Subitem</li>
+          <li class="list-group-item">Subitem</li>
+          <li class="list-group-item">Subitem</li>
+        </ul>
+        <ol>
+          <li>Subitem</li>
+        </ol>
+
+        <li>Item ordenado</li>
+      </ol>
+    </section>
+    <section class="imagem">
+      <h1>Imagens</h1>
+      <img
+        src="https://mobimg.b-cdn.net/pic/v2/gallery/preview/pejzazh-priroda-raduga-46471.jpg"
+        alt="Imagem bonita"
+      />
+    </section>
+    <section class="figuras">
+      <figure>
+        <figcaption>Figura 1</figcaption>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk2k4gqfeHxkSTJZaxnVdjLOMSaqW5kZsQug&usqp=CAU"
+          alt="simpsons"
+        />
+      </figure>
+      <figure>
+        <figcaption>Figura 2</figcaption>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdP86ld4cztMdMlKUIE1ayWv-EPCWmb-5XNw&usqp=CAU"
+          alt="simpsons"
+        />
+      </figure>
+      <figure>
+        <figcaption>Figura 3</figcaption>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8ZVXelS4D_yzwl_EDyyJrbrlDKImzzJQww&usqp=CAU"
+          alt="mamaco dando like"
+        />
+      </figure>
+    </section>
+    <section>
+      <h2>Tabelas</h2>
+      <table class="table table-dark table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Nota</th>
+            <th>Situação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 2px solid green;" rowspan="1">10</td>
+            <td style="border: 2px solid green;">Aprovado</td>
+          </tr>
+          <tr>
+            <td colspan="1">5.5</td>
+            <td>Reprovado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <p>
+        <a href="forms.html">formulários</a>
+      </p>
+    </section>
+    <footer>
+      <p>
+        <a href="#topo">Topo da página</a>
+        <a id="fim"></a>
+      </p>
+    </footer>
+  </body>
+</html>
